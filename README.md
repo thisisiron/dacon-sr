@@ -1,9 +1,9 @@
-# Dacon AIhub Super Resolution
+# Dacon AI-hub Super Resolution
 
-## Description
+## Description [[link]](https://dacon.io/competitions/official/235977/overview/description)
 - Team: 오예!
 - 구성원: gradient, Capshulization
-- Score: 24.95184 (2nd)
+- Score: **24.95184** (2nd)
 
 ## 개발 환경 및 라이브러리
 - 개발 환경
@@ -22,6 +22,7 @@
     ```
 2. 가상환경 구축 및 라이브러리 다운로드
     ```
+    pip install virtualenv
     virtualenv dacon
     source dacon/bin/activate
     pip install -r requirements.txt
@@ -38,34 +39,36 @@
     ```
     unzip open.zip
     ```
-    ```
-    ├── dacon-sr
-    │   ├── train
-    │   │   ├── lr
-    │   │   ├── hr
-    │   ├── test
-    │   │   ├── lr
-    │   ├── train.csv
-    │   ├── test.csv
-    ```
+    - 압축 후 디렉토리 상태
+        ```
+        ├── dacon-sr
+        │   ├── train
+        │   │   ├── lr
+        │   │   ├── hr
+        │   ├── test
+        │   │   ├── lr
+        │   ├── train.csv
+        │   ├── test.csv
+        ```
 3. Image Preprocessing (Patch 만들기)
     ```
     python preprocessing.py
     ```
-4. `./data/train`에 `hr`과 `lr`에 npy로 파일 생성
-    ```
-    ├── dacon-sr
-    │   ├── data
-    │   │   ├── train
-    │   │   │   ├── lr
-    │   │   │   │   ├── p128x128_r512x512_s32x32
-    │   │   │   ├── hr
-    │   │   │   │   ├── p512x512_r2048x2048_s128x128
-    │   ├── train.csv
-    │   ├── test.csv
-    │   ├── train
-    │   ├── test
-    ```
+    - `./data/train`에서 `hr`과 `lr`에 설정한 옵션 디렉토리 밑에 npy 파일 생성
+    - 전처리 후 디렉토리 상태
+        ```
+        ├── dacon-sr
+        │   ├── data
+        │   │   ├── train
+        │   │   │   ├── lr
+        │   │   │   │   ├── p128x128_r512x512_s32x32
+        │   │   │   ├── hr
+        │   │   │   │   ├── p512x512_r2048x2048_s128x128
+        │   ├── train.csv
+        │   ├── test.csv
+        │   ├── train
+        │   ├── test
+        ```
  
 ## Training
 <sub> 실행 명령어는 아래 Command를 참고해주세요 </sub>
@@ -97,6 +100,7 @@
                                                                --data_hr p512x512_r2048x2048_s128x128 \
                                                                --batch 4 \
                                                                --lamb_l2 5 \
+                                                               --weight experiments/EXP_NAME/weight/ckpt_NUM/gene \
                                                                --name NAME
     ```
 3. SwinIR + L1 Loss + LR 1e-5
@@ -117,6 +121,8 @@ LR 512 이미지를 HR 2048로 예측 (LR 512 -> HR 2048)
 ```
 python infer.py --img-size 2048 --stride 512 --batch 1 --weight experiments/EXP_NAME/weight/ckpt_NUM/gene 
 ```
+
+Model weight download [[link]](https://drive.google.com/drive/folders/10sDalvd7nDtGv_rqHvOa73__UlhEiXZK?usp=sharing)
 
 ## Ensemble
 1. ensemble.ipynb 실행
