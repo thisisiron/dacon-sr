@@ -52,7 +52,7 @@
     ```
     python preprocessing.py
     ```
-4. `./data/train`에 `hr`과 `lr`에 npy로 파일 생성
+4. `./data/train`에 `hr`과 `lr`에 npy 파일 생성
     ```
     ├── dacon-sr
     │   ├── data
