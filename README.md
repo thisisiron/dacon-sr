@@ -17,8 +17,8 @@
 
 1. Code download
     ```
-    git clone XXX
-    cd XXX
+    git clone https://github.com/thisisiron/dacon-sr.git
+    cd dacon-sr
     ```
 2. 가상환경 구축 및 라이브러리 다운로드
     ```
