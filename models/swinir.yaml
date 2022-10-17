@@ -1,0 +1,15 @@
+"net_type": "swinir"
+"upscale": 4
+"in_chans": 3
+"img_size": 128
+"window_size": 8
+"img_range": 1.0
+"depths": [6, 6, 6, 6, 6, 6]
+"embed_dim": 180
+"num_heads": [6, 6, 6, 6, 6, 6]
+"mlp_ratio": 2
+"upsampler": "nearest+conv"  # "pixelshuffle" | "pixelshuffledirect" | "nearest+conv" | null
+"resi_connection": "1conv"   # "1conv" | "3conv"
+# "patch_size": 4
+
+"init_type": "default"
