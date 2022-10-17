@@ -22,6 +22,7 @@
     ```
 2. 가상환경 구축 및 라이브러리 다운로드
     ```
+    pip install virtualenv
     virtualenv dacon
     source dacon/bin/activate
     pip install -r requirements.txt
