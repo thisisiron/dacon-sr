@@ -53,6 +53,19 @@
     python preprocessing.py
     ```
 4. `./data/train`에 `hr`과 `lr`에 npy로 파일 생성
+    ```
+    ├── dacon-sr
+    │   ├── data
+    │   │   ├── train
+    │   │   │   ├── lr
+    │   │   │   │   ├── p128x128_r512x512_s32x32
+    │   │   │   ├── hr
+    │   │   │   │   ├── p512x512_r2048x2048_s128x128
+    │   ├── train.csv
+    │   ├── test.csv
+    │   ├── train
+    │   ├── test
+    ```
  
 ## Training
 <sub> 실행 명령어는 아래 Command를 참고해주세요 </sub>
