@@ -68,7 +68,6 @@ def inference(generator, test_dir, opt, batch_size, img_size, stride):
                     crop.append(temp)
                     position.append([top * opt.scale, left * opt.scale])
                     batch_count += 1
-                    import pdb;pdb.set_trace()
                     if batch_count == batch_size:
                         crop = torch.Tensor(np.array(crop)).to(device).permute(0, 3, 1, 2)
                         generated = generator(crop)
