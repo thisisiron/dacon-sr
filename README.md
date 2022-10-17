@@ -100,6 +100,7 @@
                                                                --data_hr p512x512_r2048x2048_s128x128 \
                                                                --batch 4 \
                                                                --lamb_l2 5 \
+                                                               --weight experiments/EXP_NAME/weight/ckpt_NUM/gene \
                                                                --name NAME
     ```
 3. SwinIR + L1 Loss + LR 1e-5
