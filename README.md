@@ -29,7 +29,7 @@
 
 ## Data Download & Image Preprocessing
 1. Data download [[link]](https://dacon.io/competitions/official/235977/data)
-    - `` 안에 open.zip를 두어야 함
+    - `dacon-sr/` 안에 open.zip를 두어야 함
     ```
     unzip open.zip
     ```
