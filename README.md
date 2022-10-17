@@ -29,15 +29,30 @@
 
 ## Data Download & Image Preprocessing
 1. Data download [[link]](https://dacon.io/competitions/official/235977/data)
-    - `dacon-sr/` 안에 open.zip를 두어야 함
+    ```
+    ├── dacon-sr
+    │   ├── open.zip
+    │   │ 
+    ```
+2. open.zip 압축 해제
     ```
     unzip open.zip
     ```
-2. Image Preprocessing (Patch 만들기)
+    ```
+    ├── dacon-sr
+    │   ├── train
+    │   │   ├── lr
+    │   │   ├── hr
+    │   ├── test
+    │   │   ├── lr
+    │   ├── train.csv
+    │   ├── test.csv
+    ```
+3. Image Preprocessing (Patch 만들기)
     ```
     python preprocessing.py
     ```
-3. `./data/train`에 `hr`과 `lr`에 npy로 파일 생성
+4. `./data/train`에 `hr`과 `lr`에 npy로 파일 생성
  
 ## Training
 <sub> 실행 명령어는 아래 Command를 참고해주세요 </sub>
