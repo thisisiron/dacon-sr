@@ -39,34 +39,36 @@
     ```
     unzip open.zip
     ```
-    ```
-    ├── dacon-sr
-    │   ├── train
-    │   │   ├── lr
-    │   │   ├── hr
-    │   ├── test
-    │   │   ├── lr
-    │   ├── train.csv
-    │   ├── test.csv
-    ```
+    - 압축 후 디렉토리 상태
+        ```
+        ├── dacon-sr
+        │   ├── train
+        │   │   ├── lr
+        │   │   ├── hr
+        │   ├── test
+        │   │   ├── lr
+        │   ├── train.csv
+        │   ├── test.csv
+        ```
 3. Image Preprocessing (Patch 만들기)
     ```
     python preprocessing.py
     ```
-4. `./data/train`에 `hr`과 `lr`에 npy 파일 생성
-    ```
-    ├── dacon-sr
-    │   ├── data
-    │   │   ├── train
-    │   │   │   ├── lr
-    │   │   │   │   ├── p128x128_r512x512_s32x32
-    │   │   │   ├── hr
-    │   │   │   │   ├── p512x512_r2048x2048_s128x128
-    │   ├── train.csv
-    │   ├── test.csv
-    │   ├── train
-    │   ├── test
-    ```
+    - `./data/train`에서 `hr`과 `lr`에 설정한 옵션 디렉토리 밑에 npy 파일 생성
+    - 전처리 후 디렉토리 상태
+        ```
+        ├── dacon-sr
+        │   ├── data
+        │   │   ├── train
+        │   │   │   ├── lr
+        │   │   │   │   ├── p128x128_r512x512_s32x32
+        │   │   │   ├── hr
+        │   │   │   │   ├── p512x512_r2048x2048_s128x128
+        │   ├── train.csv
+        │   ├── test.csv
+        │   ├── train
+        │   ├── test
+        ```
  
 ## Training
 <sub> 실행 명령어는 아래 Command를 참고해주세요 </sub>
