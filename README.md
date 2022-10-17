@@ -118,6 +118,8 @@ LR 512 이미지를 HR 2048로 예측 (LR 512 -> HR 2048)
 python infer.py --img-size 2048 --stride 512 --batch 1 --weight experiments/EXP_NAME/weight/ckpt_NUM/gene 
 ```
 
+Model weight download [[link]](https://drive.google.com/drive/folders/10sDalvd7nDtGv_rqHvOa73__UlhEiXZK?usp=sharing)
+
 ## Ensemble
 1. ensemble.ipynb 실행
 2. 앙상블할 결과를 알맞게 subm_dirs 리스트에 작성
