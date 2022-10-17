@@ -1,4 +1,4 @@
-# super-resolution
+# Dacon AIhub Super Resolution
 
 ## Description
 - Team: 오예!
