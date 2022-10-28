@@ -3,7 +3,7 @@
 ## Description [[link]](https://dacon.io/competitions/official/235977/overview/description)
 - Team: 오예!
 - 구성원: gradient, Capshulization
-- Score: **24.95184** (2nd)
+- Score: **24.95184** (🥈 2nd)
 
 ## 개발 환경 및 라이브러리
 - 개발 환경
